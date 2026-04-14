@@ -2,14 +2,16 @@
   "name": "incident-management",
   "version": "1.0.0",
   "dependencies": {
-    "@cap-js/hana": "^x",
+    "@cap-js/hana": "^2",
     "@sap/cds": "^9",
-    "hdb": "^2.27.1",
-    "@sap/xssec": "^x"
+    "@sap/cds-mtxs": "^3.8.1",
+    "@sap/xssec": "^x",
+    "hdb": "^2.27.1"
   },
   "devDependencies": {
     "@cap-js/cds-test": "^0.4.1",
     "@cap-js/sqlite": "^2",
+    "@sap/cds-dk": "^9",
     "@sap/dev-cap-tools": "^1.31.0",
     "cds-plugin-ui5": "^0.13.0"
   },
