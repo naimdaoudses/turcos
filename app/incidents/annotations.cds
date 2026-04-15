@@ -14,6 +14,17 @@ annotate service.Incidents with @(
                 Label : '{i18n>Cliente1}',
                 Value : customer_ID,
             },
+            // CAMPOS NUEVOS EN EL FORMULARIO
+            {
+                $Type : 'UI.DataField',
+                Value : creationDate,
+                Label : 'Fecha de Creación',
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : resolutionDate,
+                Label : 'Fecha de Resolución',
+            },
         ],
     },
     UI.Facets : [
@@ -64,6 +75,17 @@ annotate service.Incidents with @(
             $Type : 'UI.DataField',
             Value : urgency.descr,
             Label : '{i18n>Urgencia1}',
+        },
+        // CAMPOS NUEVOS EN LA TABLA
+        {
+            $Type : 'UI.DataField',
+            Value : creationDate,
+            Label : 'Fecha Creación',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : resolutionDate,
+            Label : 'Fecha Resolución',
         },
     ],
     UI.SelectionFields : [
@@ -168,4 +190,3 @@ annotate service.Incidents.conversation with @(
         },
     ]
 );
-
